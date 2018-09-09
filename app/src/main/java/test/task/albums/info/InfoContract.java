@@ -2,7 +2,7 @@ package test.task.albums.info;
 
 import java.util.List;
 
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 import test.task.albums.mvp.BaseView;
 import test.task.albums.api.Result;
 
@@ -27,8 +27,8 @@ interface InfoContract {
     }
 
     class Song {
-        private String title;
-        private int trackNumber;
+        private final String title;
+        private final int trackNumber;
 
         Song(Integer trackNumber, String trackName) {
             this.trackNumber = trackNumber;

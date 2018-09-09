@@ -5,7 +5,9 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
-
+/**
+ * This represents result of searching for albums
+ * */
 public class SearchResult {
 
     @SerializedName("resultCount")

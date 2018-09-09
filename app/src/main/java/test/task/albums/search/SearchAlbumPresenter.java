@@ -2,7 +2,7 @@ package test.task.albums.search;
 
 import java.util.List;
 
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 import test.task.albums.mvp.BasePresenter;
 
 public class SearchAlbumPresenter extends BasePresenter<AlbumsSearchContract.View>

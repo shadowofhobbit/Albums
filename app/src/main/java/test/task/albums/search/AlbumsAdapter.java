@@ -19,8 +19,8 @@ import java.util.List;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ponomareva.iuliia.albums.api.Album;
-import ponomareva.iuliia.albums.R;
+import test.task.albums.api.Album;
+import test.task.albums.R;
 
 public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumViewHolder> {
     private List<Album> albums = new ArrayList<>();

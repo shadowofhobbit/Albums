@@ -3,7 +3,7 @@ package test.task.albums.search;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import ponomareva.iuliia.albums.HttpUtils;
+import test.task.albums.HttpUtils;
 import test.task.albums.api.SearchResult;
 import retrofit2.Call;
 import retrofit2.Callback;

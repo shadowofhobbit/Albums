@@ -3,7 +3,7 @@ package test.task.albums.info;
 import java.util.ArrayList;
 import java.util.List;
 
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 import test.task.albums.mvp.BasePresenter;
 import test.task.albums.api.Result;
 

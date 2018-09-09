@@ -7,7 +7,9 @@ import android.support.annotation.Nullable;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
+/**
+ * Represents an album.
+ * */
 public class Album implements Parcelable {
     @SerializedName("wrapperType")
     @Expose
@@ -65,7 +67,7 @@ public class Album implements Parcelable {
     @Nullable
     private String contentAdvisoryRating;
 
-    protected Album(Parcel in) {
+    private Album(Parcel in) {
         wrapperType = in.readString();
         collectionType = in.readString();
         if (in.readByte() == 0) {
@@ -110,14 +112,6 @@ public class Album implements Parcelable {
         }
     };
 
-    public String getWrapperType() {
-        return wrapperType;
-    }
-
-    public String getCollectionType() {
-        return collectionType;
-    }
-
     public Long getCollectionId() {
         return collectionId;
     }
@@ -130,14 +124,6 @@ public class Album implements Parcelable {
         return collectionName;
     }
 
-    public String getCollectionCensoredName() {
-        return collectionCensoredName;
-    }
-
-    public String getCollectionViewUrl() {
-        return collectionViewUrl;
-    }
-
     public String getArtworkUrl60() {
         return artworkUrl60;
     }
@@ -148,10 +134,6 @@ public class Album implements Parcelable {
 
     public Double getCollectionPrice() {
         return collectionPrice;
-    }
-
-    public String getCollectionExplicitness() {
-        return collectionExplicitness;
     }
 
     public Integer getTrackCount() {

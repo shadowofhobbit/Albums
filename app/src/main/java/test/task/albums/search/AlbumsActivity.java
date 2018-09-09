@@ -20,9 +20,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ponomareva.iuliia.albums.api.Album;
-import ponomareva.iuliia.albums.HttpUtils;
-import ponomareva.iuliia.albums.R;
+import test.task.albums.api.Album;
+import test.task.albums.HttpUtils;
+import test.task.albums.R;
 import test.task.albums.info.AlbumInfoActivity;
 
 public class AlbumsActivity extends AppCompatActivity implements AlbumClickListener, AlbumsSearchContract.View {

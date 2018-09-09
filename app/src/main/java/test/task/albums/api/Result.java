@@ -3,7 +3,9 @@ package test.task.albums.api;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
+//**
+// This can be an album or an album song.
+// */
 public class Result {
 
     @SerializedName("wrapperType")
@@ -140,16 +142,8 @@ public class Result {
         return country;
     }
 
-    public String getCurrency() {
-        return currency;
-    }
-
     public String getReleaseDate() {
         return releaseDate;
-    }
-
-    public String getPrimaryGenreName() {
-        return primaryGenreName;
     }
 
     public String getKind() {
@@ -160,16 +154,8 @@ public class Result {
         return trackName;
     }
 
-    public String getTrackCensoredName() {
-        return trackCensoredName;
-    }
-
     public Integer getTrackNumber() {
         return trackNumber;
-    }
-
-    public Integer getTrackTimeMillis() {
-        return trackTimeMillis;
     }
 
 }

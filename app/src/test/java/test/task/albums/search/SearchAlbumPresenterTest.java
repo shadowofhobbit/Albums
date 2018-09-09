@@ -8,7 +8,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.Arrays;
 import java.util.List;
 
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;

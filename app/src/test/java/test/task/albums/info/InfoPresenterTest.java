@@ -9,7 +9,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.Arrays;
 import java.util.List;
 
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 import test.task.albums.api.Result;
 
 import static org.junit.Assert.assertEquals;
@@ -48,7 +48,7 @@ public class InfoPresenterTest {
         when(result2.getKind()).thenReturn("album");
         when(result2.getTrackName()).thenReturn("An album");
         presenter.onGotAlbumAndSongs(Arrays.asList(result2, result));
-        ArgumentCaptor<List<InfoContract.Song>> argument = ArgumentCaptor.<List<InfoContract.Song>, List>forClass(List.class);
+        ArgumentCaptor<List<InfoContract.Song>> argument = ArgumentCaptor.forClass(List.class);
         verify(view).displaySongs(argument.capture());
         assertEquals(1, argument.getValue().size());
         verify(view).hideProgress();

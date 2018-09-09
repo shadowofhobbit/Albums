@@ -28,10 +28,12 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProviders;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ponomareva.iuliia.albums.api.Album;
-import ponomareva.iuliia.albums.HttpUtils;
-import ponomareva.iuliia.albums.R;
-
+import test.task.albums.api.Album;
+import test.task.albums.HttpUtils;
+import test.task.albums.R;
+/**
+ * Displays a screen with information about an album and a list of the songs.
+ * */
 public class AlbumInfoActivity extends AppCompatActivity implements InfoContract.View {
     public static final String ALBUM = "album";
     private Album album;
@@ -43,7 +45,7 @@ public class AlbumInfoActivity extends AppCompatActivity implements InfoContract
     ImageView imageView;
     @BindView(R.id.progressBar)
     ProgressBar progressBar;
-    InfoContract.Presenter presenter;
+    private InfoContract.Presenter presenter;
     private SongsViewModel songsViewModel;
 
     @Override

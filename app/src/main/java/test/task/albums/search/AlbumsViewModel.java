@@ -5,8 +5,10 @@ import java.util.List;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 
+//With weaker access Espresso tests don't work.
+@SuppressWarnings("WeakerAccess")
 public class AlbumsViewModel extends ViewModel {
     private String query;
     private MutableLiveData<List<Album>> albums;

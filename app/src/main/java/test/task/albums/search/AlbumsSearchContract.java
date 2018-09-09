@@ -2,10 +2,10 @@ package test.task.albums.search;
 
 import java.util.List;
 
-import ponomareva.iuliia.albums.api.Album;
+import test.task.albums.api.Album;
 import test.task.albums.mvp.BaseView;
 
-public interface AlbumsSearchContract {
+interface AlbumsSearchContract {
 
         interface View extends BaseView {
             void displayAlbums(List<Album> albums);

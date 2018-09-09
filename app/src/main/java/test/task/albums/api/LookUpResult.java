@@ -5,7 +5,9 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
-
+/**
+ * This represents the result of looking up an album by id.
+ * */
 public class LookUpResult {
 
     @SerializedName("results")

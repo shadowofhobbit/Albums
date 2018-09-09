@@ -25,6 +25,7 @@ allprojects {
 ext {
     retrofitVersion = '2.4.0'
     archVersion = "2.0.0-rc01"
+    butterknifeVersion = "8.8.1"
 }
 
 task clean(type: Delete) {
