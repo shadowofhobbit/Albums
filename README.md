@@ -1,1 +1,1 @@
-A simple Android app that displays albums from the iTunes API
+An Android app that displays albums from the iTunes API
